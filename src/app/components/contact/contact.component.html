@@ -1,5 +1,5 @@
 
-<section class="py-24 bg-blue-600 text-white text-center">
+<section id="contato" class="py-24 bg-blue-600 text-white text-center">
   <div class="max-w-4xl mx-auto px-6">
     
     <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Pronto para assumir o controle da sua infraestrutura?</h2>
@@ -7,30 +7,28 @@
       Agende um diagnóstico cirúrgico de 15 minutos e descubra como nossa auditoria de 48 horas pode estancar prejuízos na nuvem e no código.
     </p>
 
-    <form class="bg-slate-900 rounded-2xl p-8 max-w-2xl mx-auto shadow-2xl text-left border border-slate-700">
+    <form action="https://formspree.io/f/mpqodbzz" method="POST" class="bg-slate-900 rounded-2xl p-8 max-w-2xl mx-auto shadow-2xl text-left border border-slate-700">
+      
       <div class="grid md:grid-cols-2 gap-6 mb-6">
         <div>
           <label class="block text-sm font-medium text-slate-300 mb-2">Nome Completo</label>
-          <input type="text" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="João Silva">
+          <input type="text" name="nome" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="João Silva">
         </div>
         <div>
           <label class="block text-sm font-medium text-slate-300 mb-2">E-mail Corporativo</label>
-          <input type="email" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="joao@empresa.com.br">
+          <input type="email" name="email" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="joao@empresa.com.br">
         </div>
       </div>
       
       <div class="mb-6">
         <label class="block text-sm font-medium text-slate-300 mb-2">Qual o maior desafio de TI hoje?</label>
-        <textarea rows="3" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="Ex: Custo alto na AWS, sistema legado instável..."></textarea>
+        <textarea name="mensagem" required rows="3" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="Ex: Custo alto na AWS, sistema legado instável..."></textarea>
       </div>
 
-      <button type="button" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg">
         Solicitar Contato Especializado
       </button>
       
-      <p class="text-slate-400 text-sm text-center mt-4">
-        Ao enviar, você concorda em receber contato estritamente focado em tecnologia e negócios. Sem spam.
-      </p>
     </form>
 
   </div>
